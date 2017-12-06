@@ -1,0 +1,22 @@
+.boxicon{
+    position: relative;
+}
+.boxicon img{
+    width: 20px!important;
+    height: 20px!important;
+    position: absolute;margin: auto;
+    top: 0;left: 0;right: 0;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.boxicon .icon1{opacity: 1;}
+.boxicon .icon2hover{opacity: 0;}
+
+.m-menu__link-text{margin-left: 10px;}
+
+/* ------------------- */
+.m-menu__item:hover .boxicon .icon1{opacity: 0;}
+.m-menu__item:hover .boxicon .icon2hover{opacity: 1;}
