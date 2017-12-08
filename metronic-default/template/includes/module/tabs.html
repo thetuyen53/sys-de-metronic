@@ -1,0 +1,81 @@
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#tabs1" aria-controls="tabs1" role="tab" data-toggle="tab">Frequently Asked</a></li>
+        <li role="presentation"><a href="#tabs2" aria-controls="tabs2" role="tab" data-toggle="tab">Developers</a></li>
+        <li role="presentation"><a href="#tabs3" aria-controls="tabs3" role="tab" data-toggle="tab">Merchant Services</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="tabs1">
+            <div class="panel-group accordion-s1" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">a</a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p>content a</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">b</a>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>content b</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsethree" aria-expanded="false">c</a>
+                    </div>
+                    <div id="collapsethree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>content c</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tabs2">
+            
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tabs3">
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+<style>
+    .accordion-s1 .panel + .panel,.accordion-s2 .panel + .panel{margin-top:10px;}
+    .accordion-s1 .panel,.accordion-s2 .panel{border-radius:0;border-color:#f1efef;-webkit-box-shadow:none;box-shadow:none;}
+    .accordion-s1 .panel-heading,.accordion-s2 .panel-heading{background-color:#f8f8f8;padding:0;}
+    .accordion-s1 .panel-heading a,.accordion-s2 .panel-heading a{background-color:#73b21a;display:block;font-size:18px;font-size:1.125rem;font-weight:600;color:#fff;padding:10px 25px;position:relative;}
+    @media (max-width:991px){
+        .accordion-s1 .panel-heading a,.accordion-s2 .panel-heading a{font-size:15px;font-size:0.9375rem;}
+    }
+    @media (max-width:767px){
+        .accordion-s1 .panel-heading a,.accordion-s2 .panel-heading a{padding:10px 20px;}
+    }
+    .accordion-s1 .panel-heading a:after,.accordion-s2 .panel-heading a:after{font-family:"FontAwesome";content:"\f102";background-color:#3a590d;width:25px;height:25px;line-height:25px;font-size:13px;font-size:0.8125rem;text-align:center;position:absolute;right:25px;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;border-radius:50%;}
+    @media (max-width:767px){
+        .accordion-s1 .panel-heading a:after,.accordion-s2 .panel-heading a:after{display:none;}
+    }
+    .accordion-s1 .panel-heading .collapsed,.accordion-s2 .panel-heading .collapsed{background-color:#f8f8f8;color:#73b21a;}
+    .accordion-s1 .panel-heading .collapsed:after,.accordion-s2 .panel-heading .collapsed:after{background-color:#e6e6e6;content:"\f103";border:1px solid #e6e6e6;}
+    .accordion-s1 .panel-default > .panel-heading + .panel-collapse > .panel-body,.accordion-s2 .panel-default > .panel-heading + .panel-collapse > .panel-body{border-color:#f1efef;}
+    .accordion-s1 .panel-body,.accordion-s2 .panel-body{padding:25px;}
+    @media (max-width:767px){
+        .accordion-s1 .panel-body,.accordion-s2 .panel-body{padding:20px;}
+    }
+    .accordion-s1 .panel-body > p:last-child,.accordion-s2 .panel-body > p:last-child{margin-bottom:0;}
+</style>

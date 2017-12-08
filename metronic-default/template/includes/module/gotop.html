@@ -1,0 +1,61 @@
+<script>
+    /*------------------------------------------
+        = BACK TO TOP BTN SETTING
+    -------------------------------------------*/
+    $("body").prepend("<a href='#'' class='back-to-top'><i class='fa fa-long-arrow-up'></i></a>");
+
+    function toggleBackToTopBtn() {
+        var amountScrolled = 300;
+        if ($(window).scrollTop() > amountScrolled) {
+            $("a.back-to-top").fadeIn("slow");
+        } else {
+            $("a.back-to-top").fadeOut("slow");
+        }
+    }
+
+    $(".back-to-top").on("click", function() {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 700);
+        return false;
+    })
+</script>
+
+
+<style>
+    .back-to-top {
+        background-color: rgba(115, 178, 26, 0.8);
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        /*display: none;*/
+        position: fixed;
+        z-index: 999;
+        right: 15px;
+        bottom: 15px;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        transition: all 0.2s;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+    }
+    .back-to-top i {
+        font-size: 18px;
+        color: #fff;
+        font-size: 1.125rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>

@@ -1,0 +1,40 @@
+//-------------------------------------------------------
+SITE
+0. 		home
+1.  n - news:	n-news
+2.		n-news-detail
+
+3. pr-product:	pr-product
+4. 		pr-product-detail
+
+5. c-contact:	c-contact
+
+
+
+//-------------------------------------------------------
+SYSTEM
+5. l - login : 	l-sign-in
+6.		l-sign-up
+7.		l-forgotyourpassword
+8.		l-page-404
+
+
+9. p - profile:	p-profile-update
+10.		p-change-password
+11.		p-change-avatar
+		
+12. t - tree: 	t-binary-tree
+13.		t-level-tree
+14.		t-downline-tree
+
+15. sp-support	sp-faq
+		sp-support
+
+16. tb-table:	tb-commission	
+
+
+//-------------------------------------------------------
+DEFAULT FORM
+17. p-profile-1col
+18. p-profile-2col
+

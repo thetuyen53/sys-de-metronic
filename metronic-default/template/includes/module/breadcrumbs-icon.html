@@ -1,0 +1,24 @@
+<ol class="breadcrumb br-icon">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+
+<style>
+	.br-icon{background-color: transparent;}
+	.br-icon li {
+	    position: relative;
+	    margin-left: 30px;
+	    margin-right: 15px;
+	    color: #000;
+	}
+	.br-icon li:before, .br-icon > li + li:before{
+	    font: normal normal normal 14px/1 FontAwesome;
+	    position: absolute;
+	    width: 8px;
+	    height: 10px;
+	   	content: "\f0da";
+	    left: -30px;
+	    top: 3px;color: #000;
+	}
+</style>

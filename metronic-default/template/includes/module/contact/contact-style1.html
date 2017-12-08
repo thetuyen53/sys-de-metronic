@@ -1,0 +1,156 @@
+<div class="contact-page">
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65240551.19322787!2d-20.67271183517632!3d-3.594985441884611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10a06c0a948cf5d5%3A0x108270c99e90f0b3!2sAfrica!5e0!3m2!1sen!2sin!4v1465979468408" allowfullscreen=""></iframe>
+    </div>
+    <!-- google-map -->
+    <div class="content-contact" style="max-width: 1000px;">
+        <div class="same-title">
+            <i>Our Contact</i>
+            <h2>We are ready to hear</h2>
+        </div>
+        <div class="info-contact">
+
+            <p>We are a fully accredited hospital by The Joint Commission, with a certified Level II Trauma Center. Cleve land Clinic Cancer Center at Fairview Hospital Moll Pavilion, located directly across the street from our main located directly across the street building...</p>
+
+            <div class="icon row">
+                <div class="item col-sm-3"><i class="fa fa-home"></i>Green Stress, Monaco, UK</div>
+                <div class="item col-sm-3"><i class="fa fa-phone"></i>+68 903 537 892</div>
+                <div class="item col-sm-3"><i class="fa fa-envelope"></i>kelis@monano.uk.com</div>
+                <div class="item col-sm-3"><i class="fa fa-plane"></i>https://kelis.com</div>
+            </div>
+        </div>
+        <form method="post" action="/contact#contact_form" id="contact_form" class="contact-form form-horizontal" accept-charset="UTF-8">
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <div class="box-control">
+                        <input type="text" name="contact[name]" placeholder="Name" class="contact_name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="box-control">
+                        <input type="text" name="contact[email]" placeholder="Email" class="contact_email">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div class="box-control"><textarea placeholder="Message" name="contact[body]"></textarea></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div class="box-control"><button type="submit">Send</button></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<style>
+    .same-title {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+    .same-title i {
+      font-size: 20px;
+      color: #49a010;
+    }
+    .same-title h2 {
+      font-size: 30px;
+      color: #000;
+      font-weight: 700;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    /*-------------------------*/
+
+    .google-map {
+      width: 100%;
+    }
+    .google-map iframe {
+      filter: saturate(0);
+      width: 100%!important;
+      height: 500px!important;
+      border: 0;
+    }
+    .content-contact {
+      margin: 50px auto;
+      margin-bottom: 100px;
+      width: 100%;
+    }
+    .content-contact .info-contact {
+      width: 100%;
+    }
+    .content-contact .info-contact p {
+      font-size: 14px;
+      color: #666;
+      display: block;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    .content-contact .info-contact .icon {
+      
+    }
+    .content-contact .info-contact .icon .item {
+      color: #5b5b5b;
+      font-size: 14px;
+    }
+    .content-contact .info-contact .icon .item i{margin-right: 10px;}
+    .content-contact .contact-form {
+      width: 100%;
+      margin-top: 40px;
+    }
+    .content-contact .contact-form input, .content-contact .contact-form select {
+      border: 1px solid #e8e8e8;
+      height: 60px;
+      outline: none;
+      padding: 0 20px;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .content-contact .contact-form textarea {
+      border: 1px solid #e8e8e8;
+      height: 230px;
+      width: 100%;
+      outline: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      clear: both;
+      resize: none;
+    }
+    .content-contact .contact-form button {
+      border: 0;
+      background: #49a010;
+      height: 50px;
+      padding: 0 60px;
+      border-radius: 50px;
+      font-size: 14px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    /*-------------------------------*/
+    .content-contact .form-group{margin-bottom: 20px;}
+    .content-contact .box-control {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .content-contact .form-group {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    @media (max-width: 992px){
+        .content-contact .form-group{margin-bottom: 0;}
+        .content-contact .box-control {
+            margin-bottom: 20px;
+        }
+    }
+    
+</style>
